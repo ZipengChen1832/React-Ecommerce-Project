@@ -1,0 +1,45 @@
+#about {
+    position: relative;
+    top: 6rem;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+#about .topic {
+    margin-bottom: 5rem;
+}
+
+#about .title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+#about .dash {
+    width: 4rem;
+    height: 4px;
+    margin: 0.5rem auto 1rem auto;
+    background-color: black;
+}
+
+#about .content {
+    display: flex;
+    justify-content: space-around;
+}
+
+#about .info {
+    text-align: justify;
+    width: 45%;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+
+#about .img-container {
+    width: 45%;
+}
+
+#about img {
+    max-width: 100%; 
+    height: auto;
+}

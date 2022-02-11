@@ -1,0 +1,58 @@
+main#account {
+    position: relative;
+    top: 6rem;
+    
+    width: 40vw;
+    min-width: 375px;
+    margin: 0 auto;
+    display: grid;
+    justify-items: center;
+}
+
+#account h1 {
+    text-align: center;
+}
+
+.user-info input{
+    width: 100%;
+    background-color: gray;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.user-info input:focus{
+    outline: none;
+}
+
+
+#account .profile {
+    width: 100%;
+}
+ 
+.user-info {
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.info-title {
+    font-size: 2rem;
+}
+
+
+#account .icon:hover {
+    cursor: pointer;
+}
+
+.signout-btn {
+    margin-top: 1rem;
+    height: 2.5rem;
+    width: 100%;
+    background-color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}

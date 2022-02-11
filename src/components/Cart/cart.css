@@ -1,0 +1,142 @@
+main#cart {
+    position: relative;
+    width: 80vw;
+    margin: 0 auto;
+    top: 5rem;
+}
+
+table.cart-items{
+    width:100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    font-size: 1.2rem;
+    background-color: #121212;
+    color:white;
+    padding: 0.5rem 0.5rem;
+}
+
+.mobile-banner {
+    display:none;
+}
+
+td {
+    /* text-align: center; */
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.5rem;
+}
+
+.item-info {
+    display: flex;
+}
+
+.item-img img{
+    height: 6rem;
+    width: 6rem;
+    margin-right: 1rem;
+}
+
+.item-name {
+    font-weight: 800;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+
+.delete-btn {
+    color: rgb(39, 111, 179);
+    
+}
+.delete-btn:hover {
+    cursor: pointer;
+}
+
+.payment {
+    display: grid;
+    justify-content: flex-end;
+}
+
+.total-price {
+    width: 30%;
+    min-width: 300px;
+    border-top: 3px solid #121212;
+}
+
+td:last-child, th:last-child {
+    text-align: right;
+}
+
+.checkout-btn {
+    width: 10rem;
+    height: 2rem;
+    margin-top: 1rem;
+    justify-self: flex-end;
+    background-color: #121212;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+}
+
+.checkout-btn:hover {
+    cursor: not-allowed;
+}
+
+
+#cart .alert {
+    margin-top: 0.5rem;
+    justify-self: flex-end;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    padding: 4px;
+    background-color: lightyellow;
+}
+
+#cart .quantity {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#cart .quantity button {
+    /* background-color: inherit;
+    border: none */
+    margin: 0 0.5rem;
+}
+
+.mobile-quantity {
+    display: none;
+}
+
+@media screen and (max-width:700px){
+    tr.banner {
+        display: none;
+    }
+
+    .mobile-banner {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+        background-color: #121212;
+        color:white;
+        padding: 0.5rem 0.5rem;
+        border: 1px solid black;
+    }
+
+    .td-quantity {
+        display: none;
+    }
+
+    td.item-price {
+        display: none;
+    }
+
+    .mobile-quantity {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 1rem;
+    }
+
+    
+}
