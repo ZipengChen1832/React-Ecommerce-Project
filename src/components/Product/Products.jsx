@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { useNavigate, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import {products} from '../../data/products';
 
@@ -28,11 +28,12 @@ export default function Products() {
                     </ul>
                 </div>
                 <div className="products-container">
-                    {products.map(product=>{
-                        if(displayType==="all"||displayType===product.type)
+                    {products.filter(product=>displayType==="all"||displayType===product.type)
+                    .map(product=>{
+                        // if(displayType==="all"||displayType===product.type)
                         return <div className='product' key={product.id}>
                             <Link to={`/products/${product.id}`}>
-                                <img className='product-thumbnail' src={product.image}></img>
+                                <img className='product-thumbnail' src={product.image} alt={product.name}></img>
                             </Link>
                             <div className='name'>{product.name}</div>
                             <div className='price'>${product.price}</div>

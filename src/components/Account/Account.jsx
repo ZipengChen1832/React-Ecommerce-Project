@@ -3,29 +3,11 @@ import { useAuth } from '../../authentication/AuthContext';
 import './account.css';
 import {FiEdit3, FiSave} from 'react-icons/fi';
 
-import { getDatabase, ref, set, onValue, get, child, update } from "firebase/database";
+import { getDatabase, ref, set, onValue } from "firebase/database";
 const db = getDatabase();
 
 export default function Account() {
-    const {signout, currentUser} = useAuth();
-    // const [userinfo,setUserinfo] = useState();
-
-    // const uid = currentUser.uid;
-    // const dbRef = ref(getDatabase());
-    // set(ref(db,'users/'+uid),{
-    //     name: "John Smith",
-    //     address: "123 React St."
-    // })
-
-
-    // useEffect(()=>{
-    //     onValue(ref(db,`users/${currentUser.uid}`),snapshot=>{
-    //         const data = snapshot.val();
-    //         console.log(data);
-    //     })
-    // },[]);
-    
-    
+    const {signout, currentUser} = useAuth();    
 
   return <main id='account'>
     <h1>My Account</h1>

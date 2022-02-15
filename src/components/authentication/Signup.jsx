@@ -18,7 +18,7 @@ export default function Signup() {
         setLoading(true);
         setAlert();
         
-        if(passwordRef.current.value!=passwordConfirmRef.current.value){
+        if(passwordRef.current.value!==passwordConfirmRef.current.value){
             setAlert({message:"Passwords don't match!",type:"error"});
             setLoading(false);
             return;

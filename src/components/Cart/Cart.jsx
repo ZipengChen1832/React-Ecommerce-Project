@@ -1,7 +1,6 @@
 import React, {useState,useEffect} from 'react'
 import './cart.css'
 import { useAuth } from '../../authentication/AuthContext';
-import * as DB from '../../utility/localstorage';
 import * as db from '../../utility/realtimeDB.js';
 import {products} from '../../data/products';
 

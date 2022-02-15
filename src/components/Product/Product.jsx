@@ -1,7 +1,6 @@
-import React, {useRef,useState,useEffect} from 'react'
+import React, {useState} from 'react'
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import './product.css'
-import * as DB from '../../utility/localstorage';
 import * as db from '../../utility/realtimeDB';
 import {products} from '../../data/products';
 import {useAuth} from '../../authentication/AuthContext';

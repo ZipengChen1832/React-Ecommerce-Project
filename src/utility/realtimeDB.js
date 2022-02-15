@@ -1,4 +1,4 @@
-import { ref, onValue, set, get, child } from "firebase/database";
+import { ref, set, get, child } from "firebase/database";
 import {db} from './firebase';
 
 export function updateCartItems(uid,items){
