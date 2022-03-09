@@ -48,6 +48,7 @@ export default function Nav() {
             {showmenu && <aside className='mobile-menu'>
                 <div><a onClick={redirect} data-page="">home</a></div>
                 <div><a onClick={redirect} data-page="products">products</a></div>
+                <div><a onClick={redirect} data-page="cart">cart</a></div>
                 <div><a onClick={redirect} data-page="about">about</a></div>
             </aside>}
         </nav>
